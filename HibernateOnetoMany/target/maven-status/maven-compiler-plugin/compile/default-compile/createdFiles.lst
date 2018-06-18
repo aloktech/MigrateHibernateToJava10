@@ -1,0 +1,7 @@
+com/imos/sample/onetomany/model/PersonAddress.class
+com/imos/sample/onetomany/model/support/PersonInfo.class
+com/imos/sample/onetomany/repo/PersonRepository.class
+com/imos/sample/onetomany/repo/PersonDetailRepository.class
+com/imos/sample/onetomany/model/PersonDetail.class
+com/imos/sample/onetomany/repo/PersonAddressRepository.class
+com/imos/sample/onetomany/model/Person.class

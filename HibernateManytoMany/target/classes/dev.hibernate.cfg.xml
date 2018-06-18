@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--Development-->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/samplehb?zeroDateTimeBehavior=convertToNull&amp;useSSL=false</property>
+        <!-- Office -->
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">rockwell235+</property>
+        <!-- Home -->
+        <!-- <property name="hibernate.connection.username">pintu</property>
+        <property name="hibernate.connection.password">admin235+</property>-->
+        
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.connection.isolation">2</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">false</property>
+        
+        <mapping class="com.imos.sample.manytomany.model.Person"></mapping>
+        <mapping class="com.imos.sample.manytomany.model.PersonDetail"></mapping>
+        <mapping class="com.imos.sample.manytomany.model.PersonAddress"></mapping>
+        <mapping class="com.imos.sample.manytomany.model.Event"></mapping>
+    </session-factory>
+</hibernate-configuration>

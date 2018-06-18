@@ -1,0 +1,5 @@
+com/imos/sample/onetoone/model/PersonDetail.class
+com/imos/sample/onetoone/model/support/PersonInfo.class
+com/imos/sample/onetoone/model/Person.class
+com/imos/sample/onetoone/repo/PersonDetailRepository.class
+com/imos/sample/onetoone/repo/PersonRepository.class

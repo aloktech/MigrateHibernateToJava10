@@ -1,0 +1,49 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.imos.sample.base:HibernateBase:jar:1.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM com.imos.sample.base:HibernateBase:[unknown-version] (/home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/pom.xml) points at com.imos.sample:HibernateStudyJava9 instead of com.imos.sample:SampleHibernateStudy, please verify your project structure @ com.imos.sample.base:HibernateBase:[unknown-version], /home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/pom.xml, line 6, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------------< com.imos.sample.base:HibernateBase >-----------------
+[INFO] Building HibernateBase 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ HibernateBase ---
+[INFO] Deleting /home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ HibernateBase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ HibernateBase ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/target/classes
+[INFO] /home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/src/main/java/com/imos/sample/base/QueryResultType.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/src/main/java/com/imos/sample/base/QueryResultType.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ HibernateBase ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ HibernateBase ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ HibernateBase ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ HibernateBase ---
+[INFO] Building jar: /home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/target/HibernateBase-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ HibernateBase ---
+[INFO] Installing /home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/target/HibernateBase-1.0-SNAPSHOT.jar to /home/pintu/.m2/repository/com/imos/sample/base/HibernateBase/1.0-SNAPSHOT/HibernateBase-1.0-SNAPSHOT.jar
+[INFO] Installing /home/pintu/Tools/Netbeans8.2Workspace/HibernateStudyJava9/HibernateBase/pom.xml to /home/pintu/.m2/repository/com/imos/sample/base/HibernateBase/1.0-SNAPSHOT/HibernateBase-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.723 s
+[INFO] Finished at: 2018-06-15T09:21:14+05:30
+[INFO] ------------------------------------------------------------------------

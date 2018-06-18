@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--Testing-->
+        <property name="hibernate.connection.driver_class">org.h2.Driver</property>
+        <property name="hibernate.connection.url">jdbc:h2:mem:samplehb;MODE=MySQL</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password"></property>
+        <!--Development-->
+<!--        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/samplehb?zeroDateTimeBehavior=convertToNull&amp;useSSL=false</property>
+         Office 
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">rockwell235+</property>-->
+        <!-- Home -->
+<!--        <property name="hibernate.connection.username">pintu</property>
+        <property name="hibernate.connection.password">admin235+</property>-->
+        
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.connection.isolation">2</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">false</property>
+        
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+        <property name="hibernate.cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+        
+<!--        <property name="hibernate.cache.use_query_cache">true</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>-->
+<!--        <property name="hibernate.cache.use_minimal_puts">true</property>
+        <property name="hibernate.cache.region.factory_class">com.hazelcast.hibernate.HazelcastCacheRegionFactory</property>
+        <property name="hibernate.cache.provider_configuration_file_resource_path">hazelcast-custom-config.xml</property>
+        <property name="hibernate.cache.hazelcast.use_native_client">true</property>-->
+        
+    </session-factory>
+</hibernate-configuration>

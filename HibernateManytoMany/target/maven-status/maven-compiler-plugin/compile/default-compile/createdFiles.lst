@@ -1,0 +1,11 @@
+com/imos/sample/manytomany/model/Person.class
+com/imos/sample/manytomany/util/LocalDateAttributeConverter.class
+com/imos/sample/manytomany/repo/PersonAddressRepository.class
+com/imos/sample/manytomany/model/PersonAddress.class
+com/imos/sample/manytomany/model/Event.class
+com/imos/sample/manytomany/repo/PersonDetailRepository.class
+com/imos/sample/manytomany/model/PersonDetail.class
+com/imos/sample/manytomany/repo/EventRepository.class
+com/imos/sample/manytomany/util/EventType.class
+com/imos/sample/manytomany/repo/PersonRepository.class
+com/imos/sample/manytomany/model/support/PersonInfo.class
