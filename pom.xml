@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.imos.sample</groupId>
-    <artifactId>HibernateStudyJava10s</artifactId>
+    <artifactId>HibernateStudyJava10</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
@@ -11,14 +11,14 @@
         <module>HibernateOnetoOne</module>
         <module>HibernateOnetoMany</module>
         <module>HibernateManytoMany</module>
-        <module>HibernateCache</module>
         <module>HibernateConnectionPool</module>
+        <module>HibernateCache</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>9</maven.compiler.source>
-        <maven.compiler.target>9</maven.compiler.target>
-        <maven.compiler.release>9</maven.compiler.release>
+        <maven.compiler.source>10</maven.compiler.source>
+        <maven.compiler.target>10</maven.compiler.target>
+        <maven.compiler.release>10</maven.compiler.release>
     </properties>
-    <name>HibernateStudyJava10s</name>
+    <name>HibernateStudyJava10</name>
 </project>

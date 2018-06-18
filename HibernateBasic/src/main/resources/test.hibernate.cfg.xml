@@ -14,6 +14,6 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">false</property>
         
-        <mapping class="com.imos.sample.basic.model.Person"></mapping>
+        <mapping class="com.imos.basic.model.Person"></mapping>
     </session-factory>
 </hibernate-configuration>

@@ -22,6 +22,6 @@
         <!--<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.internal.SingletonEhcacheRegionFactory</property>-->
         <!--<property name="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.SingletonEhCacheRegionFactory</property>-->
         
-        <mapping class="com.imos.sample.cache.model.Person"></mapping>
+        <mapping class="com.imos.cache.model.Person"></mapping>
     </session-factory>
 </hibernate-configuration>

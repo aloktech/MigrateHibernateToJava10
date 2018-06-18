@@ -14,9 +14,9 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">false</property>
 
-        <mapping class="com.imos.sample.manytomany.model.Person"></mapping>
-        <mapping class="com.imos.sample.manytomany.model.PersonDetail"></mapping>
-        <mapping class="com.imos.sample.manytomany.model.PersonAddress"></mapping>
-        <mapping class="com.imos.sample.manytomany.model.Event"></mapping>
+        <mapping class="com.imos.manytomany.model.Person"></mapping>
+        <mapping class="com.imos.manytomany.model.PersonDetail"></mapping>
+        <mapping class="com.imos.manytomany.model.PersonAddress"></mapping>
+        <mapping class="com.imos.manytomany.model.Event"></mapping>
     </session-factory>
 </hibernate-configuration>
