@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--Testing-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.connection.isolation">2</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">false</property>
+        
+        <property name="hibernate.hikari.dataSourceClassName">com.mysql.cj.jdbc.MysqlDataSource</property>
+        <property name="hibernate.hikari.dataSource.url">jdbc:mysql://localhost:3306/sampledb?zeroDateTimeBehavior=convertToNull&amp;useSSL=false</property>
+        <property name="hibernate.hikari.dataSource.user">root</property>
+        <property name="hibernate.hikari.dataSource.password">rockwell235+</property>
+        <property name="hibernate.hikari.maximumPoolSize">100</property>
+        <property name="connection.provider_class">org.hibernate.hikaricp.internal.HikariCPConnectionProvider</property>
+
+        <mapping class="com.imos.pool.model.Person"></mapping>
+    </session-factory>
+</hibernate-configuration>
