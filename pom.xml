@@ -12,12 +12,13 @@
         <module>HibernateOnetoMany</module>
         <module>HibernateManytoMany</module>
         <module>HibernateConnectionPool</module>
-        <module>HibernateCache</module>
+        <module>HibernateEHCache</module>
+        <module>HibernateHazelcastCache</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>10</maven.compiler.source>
-        <maven.compiler.target>10</maven.compiler.target>
+        <maven.compiler.source>9</maven.compiler.source>
+        <maven.compiler.target>9</maven.compiler.target>
         <maven.compiler.release>10</maven.compiler.release>
     </properties>
     <name>HibernateStudyJava10</name>
