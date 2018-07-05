@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+<!--        <property name="hibernate.hikari.dialect">org.hibernate.dialect.MySQLDialect</property>-->
+<!--        <property name="hibernate.hikari.connection.driver_class">com.mysql.jdbc.Driver</property>-->
+        <property name="hibernate.hikari.dataSourceClassName">com.mysql.cj.jdbc.MysqlDataSource</property>
+        <property name="hibernate.hikari.dataSource.url">jdbc:mysql://localhost:3306/sampledb?zeroDateTimeBehavior=convertToNull&amp;useSSL=false</property>
+        <property name="hibernate.hikari.dataSource.user">root</property>
+        <property name="hibernate.hikari.dataSource.password">rockwell235+</property>
+        <property name="hibernate.hikari.maximumPoolSize">100</property>
+        <property name="connection.provider_class">org.hibernate.hikaricp.internal.HikariCPConnectionProvider</property>
+    </session-factory>
+</hibernate-configuration>
