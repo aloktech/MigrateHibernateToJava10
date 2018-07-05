@@ -32,3 +32,5 @@ hs_err_pid*
 /HibernateManytoMany/target/
 /HibernateConnectionPool/target/
 /HibernateHazelcastCache/target/
+/HibernateHirakariConnectionPool/target/
+/HibernateEHCache/target/

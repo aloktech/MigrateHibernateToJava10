@@ -11,6 +11,7 @@
         <module>HibernateOnetoOne</module>
         <module>HibernateOnetoMany</module>
         <module>HibernateManytoMany</module>
+        <module>HibernateConnectionPool</module>
         <module>HibernateHirakariConnectionPool</module>
         <module>HibernateEHCache</module>
         <module>HibernateHazelcastCache</module>
