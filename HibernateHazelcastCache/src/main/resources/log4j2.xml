@@ -2,7 +2,10 @@
 <Configuration status="INFO">
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level[%t] %logger{5} %M %L - %msg%xEx%n"/>
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%-5level][%t] %logger{5} %M %L - %msg%xEx%n"/>
+            <layout class="com.jcabi.log.MulticolorLayout">
+                <param name="ConversionPattern" value="[%color{%p}] %m%n" />
+            </layout>
         </Console>
     </Appenders>
     <Loggers>

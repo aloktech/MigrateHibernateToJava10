@@ -14,6 +14,7 @@ import org.hibernate.boot.registry.BootstrapServiceRegistry;
 import org.hibernate.boot.registry.BootstrapServiceRegistryBuilder;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.stat.Statistics;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 
 /**
@@ -105,9 +106,25 @@ public enum HibernateService {
         }
     }
 
+    public void showStatistics() throws RepositoryException {
+        Statistics stat = sessionFactory.getStatistics();
+        if (Objects.nonNull(stat)) {
+            log.info("ConnectCount : " + stat.getConnectCount());
+            log.info("QueryExecutionCount : " + stat.getQueryExecutionCount());
+            log.info("QueryExecutionMaxTime : " + stat.getQueryExecutionMaxTime());
+            log.info("QueryCacheHitCount : " + stat.getQueryCacheHitCount());
+            log.info("CloseStatementCount : " + stat.getCloseStatementCount());
+            log.info("QueryExecutionMaxTimeQueryString : " + stat.getQueryExecutionMaxTimeQueryString());
+            log.info("CollectionFetchCount : " + stat.getCollectionFetchCount());
+        } else {
+            log.error("Statistics is null");
+        }
+    }
+
     public void shutDown() throws RepositoryException {
         log.info("Hibernate is closing");
         if (Objects.nonNull(sessionFactory)) {
+            showStatistics();
             sessionFactory.close();
             sessionFactory = null;
             log.info("SessionFactory is closed");

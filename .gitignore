@@ -27,3 +27,8 @@ hs_err_pid*
 /HibernateOneToMany/target/
 /HibernateManyToMany/target/
 /HibernateCache/target/
+/HibernateOnetoOne/target/
+/HibernateOnetoMany/target/
+/HibernateManytoMany/target/
+/HibernateConnectionPool/target/
+/HibernateHazelcastCache/target/

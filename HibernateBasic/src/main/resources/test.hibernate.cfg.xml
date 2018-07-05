@@ -13,6 +13,7 @@
         <property name="hibernate.connection.isolation">2</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">false</property>
+        <property name="hibernate.generate_statistics">true</property>
         
         <mapping class="com.imos.basic.model.Person"></mapping>
     </session-factory>

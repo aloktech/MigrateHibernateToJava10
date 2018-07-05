@@ -9,6 +9,7 @@
         <Root level="INFO">
             <AppenderRef ref="Console"/>
         </Root>
-        <Logger name="org.hibernate" level="OFF"/>
+        <!--<Logger name="org.hibernate" level="OFF"/>-->
+        <Logger name="org.hibernate.stat" level="DEBUG"/>
     </Loggers>
 </Configuration>
